@@ -7,6 +7,8 @@ services:
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
+      - --innodb_force__recovery=0
+      - --default_time_zone=america/Sao_Paulo
 
     volumes:
       - "C:/Users/Armando Yamada/Documents/PastaComposeBackup:/var/lib/mysql"
